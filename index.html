@@ -51,6 +51,17 @@
   header {
     padding: 80px 0 48px;
     border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  header .headshot {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    flex-shrink: 0;
   }
   header h1 {
     font-size: 2.2rem;
@@ -116,7 +127,8 @@
 
   /* Responsive */
   @media (max-width: 600px) {
-    header { padding: 48px 0 32px; }
+    header { padding: 48px 0 32px; flex-direction: column; text-align: center; }
+    header .headshot { width: 120px; height: 120px; }
     header h1 { font-size: 1.7rem; }
     section { padding: 36px 0; }
     .links-grid { grid-template-columns: 1fr; }
@@ -128,8 +140,11 @@
 <div class="container">
 
   <header>
-    <h1>Eric Whitney, DO</h1>
-    <p class="subtitle">Board-Certified Neurosurgeon &middot; Consciousness Researcher &middot; Health Technology Builder</p>
+    <img src="headshot.jpg" alt="Dr. Eric Whitney, DO — Board-Certified Neurosurgeon" class="headshot" width="140" height="140">
+    <div>
+      <h1>Eric Whitney, DO</h1>
+      <p class="subtitle">Board-Certified Neurosurgeon &middot; Consciousness Researcher &middot; Health Technology Builder</p>
+    </div>
   </header>
 
   <main>
