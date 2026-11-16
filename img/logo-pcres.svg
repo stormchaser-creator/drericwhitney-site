@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="PCRES">
+  <title>PCRES</title>
+  <path d="M46.7 9.8A25 25 0 1 1 17.3 9.8" fill="none" stroke="#1E2B45" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#2E6B66">
+    <path d="M32 49V27" stroke="#2E6B66" stroke-width="4.4" stroke-linecap="round"/>
+    <path d="M31 36C31.7 28.9 23.7 23.4 14 22C15.5 33.4 23.1 39.3 31 36ZM28.6 34.7C23.9 30.8 18.8 26.6 16 24.5C17.9 27.7 22.7 32.2 28.6 34.7Z" fill-rule="evenodd"/>
+    <path d="M33 36C40.9 39.3 48.5 33.4 50 22C40.3 23.4 32.3 28.9 33 36ZM35.4 34.7C41.3 32.2 46.1 27.7 48 24.5C45.2 26.6 40.1 30.8 35.4 34.7Z" fill-rule="evenodd"/>
+    <circle cx="32" cy="15" r="6.4"/>
+  </g>
+</svg>
