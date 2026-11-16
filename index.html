@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dr. Eric Whitney, DO — Board-Certified Neurosurgeon</title>
-<meta name="description" content="Eric Whitney, DO is a board-certified neurosurgeon, consciousness researcher, and health technology builder practicing in Southern California. Creator of validated clinical instruments, AI research tools, and open patient recovery resources.">
+<meta name="description" content="Eric Whitney, DO is a board-certified neurosurgeon, consciousness researcher, and health technology builder practicing in Southern California. Creator of clinical screening instruments now undergoing validation, AI research tools, and open patient recovery resources.">
 <meta name="keywords" content="Eric Whitney, DO, neurosurgeon, Rancho Mirage, Palm Springs, Eisenhower Health, ANMG, Arrowhead Neurosurgical, brain surgery, spine surgery, consciousness research, Pre-CERS, PCRES, The Decoded Human, Still You Recovery, CredentialDOMD">
 <meta property="og:title" content="Dr. Eric Whitney, DO — Board-Certified Neurosurgeon">
 <meta property="og:description" content="Board-certified neurosurgeon, consciousness researcher, and health technology builder practicing in Southern California.">
@@ -25,23 +25,36 @@
 </script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Georgia','Times New Roman',serif;color:#2c2c2c;background:#fafafa;line-height:1.7}
+body{font-family:'Georgia','Times New Roman',serif;color:#2c2c2c;background:#fafafa;line-height:1.7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
 .container{max-width:720px;margin:0 auto;padding:0 24px}
 header{padding:80px 0 48px;border-bottom:1px solid #e0e0e0;display:flex;align-items:center;gap:32px}
-header .headshot{width:140px;height:140px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0}
+header .headshot{width:140px;height:140px;border-radius:50%;object-fit:cover;object-position:center top;flex-shrink:0;box-shadow:0 0 0 1px #e0e0e0}
 header h1{font-size:2.2rem;font-weight:700;color:#1a1a1a;letter-spacing:-.5px;margin-bottom:8px}
-header .subtitle{font-size:1.1rem;color:#666;font-style:italic}
+header .subtitle{font-size:1.1rem;color:#5f5f5f;font-style:italic}
 .pull-quote{font-family:'Georgia',serif;font-style:italic;font-size:1.15rem;color:#555;margin:2rem 0 1rem;line-height:1.8}
 section{padding:48px 0;border-bottom:1px solid #e8e8e8}
 section:last-of-type{border-bottom:none}
-h2{font-size:1.1rem;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#888;margin-bottom:20px}
+h2{font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:2.5px;color:#6a6a6a;margin-bottom:20px}
 p{margin-bottom:16px;font-size:1.05rem}
 p:last-child{margin-bottom:0}
 a{color:#1a5276;text-decoration:none;border-bottom:1px solid #aac8db}
 a:hover{color:#0e3651;border-bottom-color:#0e3651}
-.project-group-label{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#aaa;margin:36px 0 16px;font-variant:small-caps}
+a:focus-visible{outline:2px solid #1a5276;outline-offset:3px;border-radius:2px}
+::selection{background:#d6e4ee}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;padding:8px 12px;border:1px solid #1a5276}
+.skip:focus{left:8px}
+.project-group-label{font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:3px;color:#707070;margin:40px 0 18px;padding-bottom:8px;border-bottom:1px solid #e8e8e8;font-variant:small-caps}
 .project-group-label:first-of-type{margin-top:0}
-.project{margin-bottom:28px}
+.project{margin-bottom:32px}
+.project:last-child{margin-bottom:0}
+.project.has-thumb{display:grid;grid-template-columns:1fr 160px;gap:4px 28px;align-items:start}
+.project .thumb{grid-column:2;grid-row:1;margin-top:6px;border:1px solid #e0e0e0;border-radius:4px;overflow:hidden;line-height:0;background:#fff}
+.project .thumb:hover{border-color:#aac8db}
+.project .thumb img{display:block;width:100%;height:auto}
+.project .text{grid-column:1;grid-row:1;min-width:0}
+.project.thumb-solo{margin:20px 0 0}
+.project.thumb-solo .thumb{display:inline-block;width:160px;margin:0}
+.project .logo{width:22px;height:22px;border-radius:4px;vertical-align:-4px;margin-right:9px}
 .project h3{font-size:1.15rem;font-weight:700;color:#1a1a1a;margin-bottom:4px;font-family:'Georgia',serif}
 .project p{font-size:.98rem;color:#555}
 .research-entry{margin-bottom:28px}
@@ -50,23 +63,28 @@ a:hover{color:#0e3651;border-bottom-color:#0e3651}
 .status-review{background:#dbeafe;color:#1e40af}
 .status-prep{background:#f3f4f6;color:#6b7280}
 .status-published{background:#d1fae5;color:#065f46}
-.status-validation{background:#fef3c7;color:#92400e}
+.status-validation{background:#e8eef3;color:#1a5276}
 .research-entry p{font-size:.95rem;color:#666}
 .deeper-question{border-left:3px solid #1a5276;padding-left:24px;margin:0}
 .links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px 32px}
 .links-grid a{font-size:.95rem;padding:8px 0;display:block}
-footer{padding:40px 0;text-align:center;color:#aaa;font-size:.85rem}
+footer{padding:40px 0;text-align:center;color:#707070;font-size:.85rem;border-top:1px solid #e8e8e8}
+.contact-phone{white-space:nowrap}
 @media(max-width:600px){
 header{padding:48px 0 32px;flex-direction:column;text-align:center}
 header .headshot{width:120px;height:120px}
 header h1{font-size:1.7rem}
 .pull-quote{font-size:1.05rem}
 section{padding:36px 0}
-.links-grid{grid-template-columns:1fr}
+.links-grid{grid-template-columns:1fr 1fr}
+.project.has-thumb{grid-template-columns:1fr}
+.project .thumb{grid-column:1;grid-row:1;width:160px;margin:0 0 10px}
+.project .text{grid-row:2}
 }
 </style>
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="container">
 
 <header>
@@ -79,7 +97,7 @@ section{padding:36px 0}
 
 <div class="pull-quote">I operate on the organ of consciousness for a living. That work has made me obsessed with a question surgery alone can't answer: what is it that we lose when the lights go out &mdash; and what does it tell us about what we are when they're on?</div>
 
-<main>
+<main id="main">
 
 <section>
 <h2>Clinical Practice</h2>
@@ -127,38 +145,53 @@ section{padding:36px 0}
 
 <h3 class="project-group-label">Consciousness &amp; Research</h3>
 
-<div class="project">
+<div class="project has-thumb">
+<a class="thumb" href="https://thedecodedhuman.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/the-decoded-human.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
+<div class="text">
 <h3><a href="https://thedecodedhuman.com" rel="noopener">The Decoded Human</a></h3>
 <p>An AI-powered literature connectome that discovers hidden semantic connections across open-access scientific papers. We ingest research from PMC, bioRxiv, and medRxiv, extract core scientific content, and build a living knowledge graph where papers are connected not just by citations, but by what they actually say.</p>
 <p>Because the next breakthrough in consciousness science won't come from a single paper &mdash; it will come from seeing connections across thousands of them that no individual researcher could find alone.</p>
 </div>
+</div>
 
-<div class="project">
+<div class="project has-thumb">
+<a class="thumb" href="https://pcres.org" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/pcres.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
+<div class="text">
 <h3><a href="https://pcres.org" rel="noopener">Pre-CERS &amp; PCRES</a></h3>
 <p>Two clinical screening instruments for the emotional arc of brain surgery. Pre-CERS screens emotional readiness before craniotomy. PCRES measures recovery across eight domains &mdash; identity, cognition, emotions, grief, fatigue, social connection, the medical-experience gap, and hope. Free, open, and undergoing formal psychometric validation.</p>
 <p>Because surviving surgery is not the same as feeling like yourself again.</p>
 </div>
+</div>
 
 <h3 class="project-group-label">Patient Support</h3>
 
-<div class="project">
-<h3><a href="https://stillyourecovery.com" rel="noopener">Still You Recovery</a></h3>
+<div class="project has-thumb">
+<a class="thumb" href="https://stillyourecovery.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/still-you-recovery.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
+<div class="text">
+<h3><img class="logo" src="img/logo-still-you.png" alt="" width="22" height="22"><a href="https://stillyourecovery.com" rel="noopener">Still You Recovery</a></h3>
 <p>Free resources for the emotional, cognitive, and identity changes that nobody tells you about after brain surgery or stroke. Guides for patients, caregivers, and clinicians. No registration. No paywalls.</p>
 <p>This project exists because I watched too many patients survive surgery and then lose themselves in the aftermath &mdash; and realized that no one was telling them what was coming, or that it was normal.</p>
 </div>
+</div>
 
-<div class="project">
-<h3><a href="https://stillyoufoundation.org" rel="noopener">Still You Foundation</a></h3>
+<div class="project has-thumb">
+<a class="thumb" href="https://stillyoufoundation.org" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/still-you-foundation.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
+<div class="text">
+<h3><img class="logo" src="img/logo-still-you.png" alt="" width="22" height="22"><a href="https://stillyoufoundation.org" rel="noopener">Still You Foundation</a></h3>
 <p>A foundation dedicated to emotional recovery after brain injury, stroke, and brain surgery. The current system fails these patients: 5&ndash;10 month waitlists for neuropsychological evaluation, no standardized emotional screening, and a discharge process that sends people home with surgical instructions but nothing for the identity crisis that follows.</p>
-<p>We exist to close that gap &mdash; through free resources, validated screening tools, clinician education, and AI-assisted emotional recovery support.</p>
+<p>We exist to close that gap &mdash; through free resources, screening tools, clinician education, and AI-assisted emotional recovery support.</p>
+</div>
 </div>
 
 <h3 class="project-group-label">Health Technology</h3>
 
-<div class="project">
-<h3><a href="https://credentialdomd.com" rel="noopener">CredentialDOMD</a></h3>
+<div class="project has-thumb">
+<a class="thumb" href="https://credentialdomd.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/credentialdomd.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
+<div class="text">
+<h3><img class="logo" src="img/logo-credentialdomd.png" alt="" width="22" height="22"><a href="https://credentialdomd.com" rel="noopener">CredentialDOMD</a></h3>
 <p>Physician credential management that runs itself. Track every license, certification, privilege, and CME requirement across all 50 states &mdash; with intelligent reminders, AI document scanning, and a compliance dashboard that tells you exactly what's expiring and when.</p>
 <p>Built because I lived the credentialing nightmare firsthand and decided no physician should have to manage it with spreadsheets and sticky notes.</p>
+</div>
 </div>
 
 <div class="project">
@@ -180,6 +213,7 @@ section{padding:36px 0}
 <p>This inquiry has led to The Encoded Human Project &mdash; an open research initiative exploring how biological, psychological, and consciousness-level patterns interact in the human system. The project sits at the intersection of neuroscience, developmental psychology, and the frameworks humans have used across cultures to understand what they are.</p>
 <p>Science, not belief. Observation, not dogma.</p>
 <p><a href="https://theencodedhumanproject.com" rel="noopener">Explore The Encoded Human Project &rarr;</a></p>
+<p class="project thumb-solo"><a class="thumb" href="https://theencodedhumanproject.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/the-encoded-human-project.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a></p>
 </div>
 </section>
 
@@ -202,13 +236,13 @@ section{padding:36px 0}
 <a href="https://credentialdomd.com" rel="noopener">CredentialDOMD</a>
 <a href="https://www.healthgrades.com/physician/dr-eric-whitney-xyntxnj" rel="noopener">Healthgrades</a>
 <a href="https://www.doximity.com/pub/eric-whitney-do" rel="noopener">Doximity</a>
-<a href="https://eisenhowerhealth.org/provider/?action=detail&dataRef=1250" rel="noopener">Eisenhower Health</a>
+<a href="https://eisenhowerhealth.org/provider/?action=detail&amp;dataRef=1250" rel="noopener">Eisenhower Health</a>
 </div>
 </section>
 
 <section>
 <h2>Contact</h2>
-<p>For clinical appointments, please contact <a href="https://eisenhowerhealth.org/provider/?action=detail&dataRef=1250" rel="noopener">Arrowhead Neurosurgical Medical Group</a> at (760) 610-8781.</p>
+<p>For clinical appointments, please contact <a href="https://eisenhowerhealth.org/provider/?action=detail&amp;dataRef=1250" rel="noopener">Arrowhead Neurosurgical Medical Group</a> at <a class="contact-phone" href="tel:+17606108781">(760) 610-8781</a>.</p>
 <p>For research collaborations, speaking invitations, or professional inquiries, please reach out via <a href="https://www.linkedin.com/in/eric-whitney-11b341215/" rel="noopener">LinkedIn</a>.</p>
 </section>
 
