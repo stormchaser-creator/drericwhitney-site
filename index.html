@@ -47,13 +47,6 @@ a:focus-visible{outline:2px solid #1a5276;outline-offset:3px;border-radius:2px}
 .project-group-label:first-of-type{margin-top:0}
 .project{margin-bottom:32px}
 .project:last-child{margin-bottom:0}
-.project.has-thumb{display:grid;grid-template-columns:1fr 160px;gap:4px 28px;align-items:start}
-.project .thumb{grid-column:2;grid-row:1;margin-top:6px;border:1px solid #e0e0e0;border-radius:4px;overflow:hidden;line-height:0;background:#fff}
-.project .thumb:hover{border-color:#aac8db}
-.project .thumb img{display:block;width:100%;height:auto}
-.project .text{grid-column:1;grid-row:1;min-width:0}
-.project.thumb-solo{margin:20px 0 0}
-.project.thumb-solo .thumb{display:inline-block;width:160px;margin:0}
 .project .logo{width:22px;height:22px;border-radius:4px;vertical-align:-4px;margin-right:9px}
 .project h3{font-size:1.15rem;font-weight:700;color:#1a1a1a;margin-bottom:4px;font-family:'Georgia',serif}
 .project p{font-size:.98rem;color:#555}
@@ -77,9 +70,6 @@ header h1{font-size:1.7rem}
 .pull-quote{font-size:1.05rem}
 section{padding:36px 0}
 .links-grid{grid-template-columns:1fr 1fr}
-.project.has-thumb{grid-template-columns:1fr}
-.project .thumb{grid-column:1;grid-row:1;width:160px;margin:0 0 10px}
-.project .text{grid-row:2}
 }
 </style>
 </head>
@@ -145,53 +135,38 @@ section{padding:36px 0}
 
 <h3 class="project-group-label">Consciousness &amp; Research</h3>
 
-<div class="project has-thumb">
-<a class="thumb" href="https://thedecodedhuman.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/the-decoded-human.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
-<div class="text">
+<div class="project">
 <h3><a href="https://thedecodedhuman.com" rel="noopener">The Decoded Human</a></h3>
 <p>An AI-powered literature connectome that discovers hidden semantic connections across open-access scientific papers. We ingest research from PMC, bioRxiv, and medRxiv, extract core scientific content, and build a living knowledge graph where papers are connected not just by citations, but by what they actually say.</p>
 <p>Because the next breakthrough in consciousness science won't come from a single paper &mdash; it will come from seeing connections across thousands of them that no individual researcher could find alone.</p>
 </div>
-</div>
 
-<div class="project has-thumb">
-<a class="thumb" href="https://pcres.org" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/pcres.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
-<div class="text">
+<div class="project">
 <h3><a href="https://pcres.org" rel="noopener">Pre-CERS &amp; PCRES</a></h3>
 <p>Two clinical screening instruments for the emotional arc of brain surgery. Pre-CERS screens emotional readiness before craniotomy. PCRES measures recovery across eight domains &mdash; identity, cognition, emotions, grief, fatigue, social connection, the medical-experience gap, and hope. Free, open, and undergoing formal psychometric validation.</p>
 <p>Because surviving surgery is not the same as feeling like yourself again.</p>
 </div>
-</div>
 
 <h3 class="project-group-label">Patient Support</h3>
 
-<div class="project has-thumb">
-<a class="thumb" href="https://stillyourecovery.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/still-you-recovery.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
-<div class="text">
+<div class="project">
 <h3><img class="logo" src="img/logo-still-you.png" alt="" width="22" height="22"><a href="https://stillyourecovery.com" rel="noopener">Still You Recovery</a></h3>
 <p>Free resources for the emotional, cognitive, and identity changes that nobody tells you about after brain surgery or stroke. Guides for patients, caregivers, and clinicians. No registration. No paywalls.</p>
 <p>This project exists because I watched too many patients survive surgery and then lose themselves in the aftermath &mdash; and realized that no one was telling them what was coming, or that it was normal.</p>
 </div>
-</div>
 
-<div class="project has-thumb">
-<a class="thumb" href="https://stillyoufoundation.org" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/still-you-foundation.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
-<div class="text">
+<div class="project">
 <h3><img class="logo" src="img/logo-still-you.png" alt="" width="22" height="22"><a href="https://stillyoufoundation.org" rel="noopener">Still You Foundation</a></h3>
 <p>A foundation dedicated to emotional recovery after brain injury, stroke, and brain surgery. The current system fails these patients: 5&ndash;10 month waitlists for neuropsychological evaluation, no standardized emotional screening, and a discharge process that sends people home with surgical instructions but nothing for the identity crisis that follows.</p>
 <p>We exist to close that gap &mdash; through free resources, screening tools, clinician education, and AI-assisted emotional recovery support.</p>
 </div>
-</div>
 
 <h3 class="project-group-label">Health Technology</h3>
 
-<div class="project has-thumb">
-<a class="thumb" href="https://credentialdomd.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/credentialdomd.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a>
-<div class="text">
+<div class="project">
 <h3><img class="logo" src="img/logo-credentialdomd.png" alt="" width="22" height="22"><a href="https://credentialdomd.com" rel="noopener">CredentialDOMD</a></h3>
 <p>Physician credential management that runs itself. Track every license, certification, privilege, and CME requirement across all 50 states &mdash; with intelligent reminders, AI document scanning, and a compliance dashboard that tells you exactly what's expiring and when.</p>
 <p>Built because I lived the credentialing nightmare firsthand and decided no physician should have to manage it with spreadsheets and sticky notes.</p>
-</div>
 </div>
 
 <div class="project">
@@ -213,7 +188,6 @@ section{padding:36px 0}
 <p>This inquiry has led to The Encoded Human Project &mdash; an open research initiative exploring how biological, psychological, and consciousness-level patterns interact in the human system. The project sits at the intersection of neuroscience, developmental psychology, and the frameworks humans have used across cultures to understand what they are.</p>
 <p>Science, not belief. Observation, not dogma.</p>
 <p><a href="https://theencodedhumanproject.com" rel="noopener">Explore The Encoded Human Project &rarr;</a></p>
-<p class="project thumb-solo"><a class="thumb" href="https://theencodedhumanproject.com" rel="noopener" tabindex="-1" aria-hidden="true"><img src="img/the-encoded-human-project.jpg" alt="" width="320" height="168" loading="lazy" decoding="async"></a></p>
 </div>
 </section>
 
